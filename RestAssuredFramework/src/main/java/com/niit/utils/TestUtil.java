@@ -8,7 +8,7 @@ public class TestUtil {
     public static ArrayList<Object[]> getDataFromExcel() {
 
         ArrayList<Object[]> myData = new ArrayList<Object[]>();
-        reader = new Xls_Reader("C:\\Users\\dell\\Desktop\\New folder\\RestAssuredFramework\\inputs\\Testdata.xlsx");
+        reader = new Xls_Reader(System.getProperty("user.dir") + "/inputs/Testdata.xlsx");
         for (int rownum = 2; rownum <= reader.getRowCount("GetAPI"); rownum++) {
             String host = reader.getCellData("GetAPI", "EndPoint", rownum);
             String ContentType = reader.getCellData("GetAPI", "ContentType", rownum);
@@ -26,7 +26,7 @@ public class TestUtil {
     public static ArrayList<Object[]> getPostDataFromExcel() {
 
         ArrayList<Object[]> myData = new ArrayList<Object[]>();
-        reader = new Xls_Reader("C:\\Users\\dell\\Desktop\\New folder\\RestAssuredFramework\\inputs\\Testdata.xlsx");
+        reader = new Xls_Reader(System.getProperty("user.dir") + "/inputs/Testdata.xlsx");
         for (int rownum = 2; rownum <= reader.getRowCount("PostAPI"); rownum++) {
             String host = reader.getCellData("PostAPI", "EndPoint", rownum);
             String ContentType = reader.getCellData("PostAPI", "ContentType", rownum);
@@ -44,11 +44,12 @@ public class TestUtil {
 
           }
 
-
+//System.getProperty("user.dir") + "/inputs/dev.properties"
+    //"C:\\Users\\dell\\Desktop\\New folder\\RestAssuredFramework\\inputs\\Testdata.xlsx"
     public static ArrayList<Object[]> getDeleteDataFromExcel() {
 
         ArrayList<Object[]> myData = new ArrayList<Object[]>();
-        reader = new Xls_Reader("C:\\Users\\dell\\Desktop\\New folder\\RestAssuredFramework\\inputs\\Testdata.xlsx");
+        reader = new Xls_Reader(System.getProperty("user.dir") + "/inputs/Testdata.xlsx");
         for (int rownum = 2; rownum <= reader.getRowCount("DeleteAPI"); rownum++) {
             String host = reader.getCellData("DeleteAPI", "EndPoint", rownum);
             String ContentType = reader.getCellData("DeleteAPI", "ContentType", rownum);
