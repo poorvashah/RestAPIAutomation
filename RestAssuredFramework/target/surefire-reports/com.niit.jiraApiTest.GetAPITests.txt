@@ -1,0 +1,13 @@
+-------------------------------------------------------------------------------
+Test set: com.niit.jiraApiTest.GetAPITests
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 16.736 sec <<< FAILURE!
+getJiraTestSteptatus(com.niit.jiraApiTest.GetAPITests)  Time elapsed: 0.955 sec  <<< FAILURE!
+java.lang.AssertionError: expected [404] but found [200]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:839)
+	at org.testng.Assert.assertEquals(Assert.java:849)
+	at com.niit.jiraApiTest.GetAPITests.getJiraTestSteptatus(GetAPITests.java:46)
+

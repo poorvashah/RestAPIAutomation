@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [com.niit.jiraApiTest.GetAPITests]">
+  <test thread-count="5" verbose="0" name="Command line test(failed)">
+    <classes>
+      <class name="com.niit.jiraApiTest.GetAPITests">
+        <methods>
+          <include name="teardown"/>
+          <include name="loginTest"/>
+          <include name="getJiraTestSteptatus" invocation-numbers="1"/>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- com.niit.jiraApiTest.GetAPITests -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [com.niit.jiraApiTest.GetAPITests] -->

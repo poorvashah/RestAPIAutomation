@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 9.594 s <<< FAILURE! - in TestSuite
+getJiraTestSteptatus(jiraApiTest.GetAPITests)  Time elapsed: 4.636 s  <<< FAILURE!
+java.lang.AssertionError: expected [403] but found [200]
+	at jiraApiTest.GetAPITests.getJiraTestSteptatus(GetAPITests.java:47)
+
+getJiraTestSteptatus(jiraApiTest.GetAPITests)  Time elapsed: 1.057 s  <<< FAILURE!
+java.lang.AssertionError: expected [403] but found [200]
+	at jiraApiTest.GetAPITests.getJiraTestSteptatus(GetAPITests.java:47)
+
